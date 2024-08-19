@@ -1,7 +1,101 @@
+// Paramètres généraux
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Robot", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  margin: 0px 50px;
+}
+
+//Paramètres spécifiques
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+  gap: 25px;
+
+  &--section {
+    padding: 30px;
+    border: solid 2px red;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 26px;
   color: rgba($color: $color-primary, $alpha: 1);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  //   border: solid 2px red;
+  gap: 20px;
+
+  &--onglet {
+    font-size: 24px;
+    margin: auto;
+    min-width: 80px;
+    list-style-type: none;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30vh;
+  margin: auto;
+  color: white;
+  background-color: black;
+  padding: 20px;
+
+  &--logo {
+    display: flex;
+    &__img {
+      margin: auto;
+      height: 100%;
+      border: solid 5px white;
+      border-radius: 1000px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  height: 30vh;
+  margin: auto;
+  color: white;
+  background-color: black;
+  padding: 20px;
+
+  &--text {
+    margin: auto;
+  }
+}
+
+//Contact
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  p {
+    margin: auto;
+    text-align: center;
+  }
 }
