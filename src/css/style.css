@@ -16,11 +16,11 @@ body {
   margin: 50px 0px;
   gap: 25px; }
   .main--section {
-    padding: 30px;
-    border: solid 2px red; }
+    padding: 30px; }
 
 h1,
 h2 {
+  text-align: center;
   font-family: "Playfair Display", sans-serif;
   font-size: 26px;
   color: #55c57a; }
@@ -72,3 +72,48 @@ h2 {
   .contact p {
     margin: auto;
     text-align: center; }
+
+.reseaux-et-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .reseaux-et-contact section {
+    width: 50%; }
+
+.main--section--title__portfolio {
+  margin-bottom: 20px; }
+
+.main--section__bottom h2 {
+  text-align: center; }
+
+.reseaux-et-contact--reseaux__logos {
+  display: flex;
+  justify-content: space-between; }
+  .reseaux-et-contact--reseaux__logos a {
+    width: 100%;
+    display: flex; }
+
+.reseaux-et-contact--reseaux__logo {
+  margin: auto;
+  width: 40%; }
+
+.reseaux--text,
+.paragraphe {
+  margin: 20px 0px;
+  text-align: justify;
+  text-indent: 20px; }
+  .reseaux--text__accueil,
+  .paragraphe__accueil {
+    margin-top: 20px; }
+
+.cards {
+  margin: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; }
+  .cards--card {
+    border: solid 2px green; }
+    .cards--card__img {
+      border: solid 2px purple; }
+  .cards__text {
+    border: solid 2px purple; }

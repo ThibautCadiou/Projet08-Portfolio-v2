@@ -26,12 +26,13 @@ body {
 
   &--section {
     padding: 30px;
-    border: solid 2px red;
+    // border: solid 2px red;
   }
 }
 
 h1,
 h2 {
+  text-align: center;
   font-family: "Playfair Display", sans-serif;
   font-size: 26px;
   color: rgba($color: $color-primary, $alpha: 1);
@@ -97,5 +98,75 @@ h2 {
   p {
     margin: auto;
     text-align: center;
+  }
+}
+
+.reseaux-et-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  //   border: solid 2px red;
+
+  section {
+    width: 50%;
+    // border: solid 2px red;
+  }
+}
+
+.main--section {
+  //   border: solid 2px blue;
+  &--title {
+    &__portfolio {
+      margin-bottom: 20px;
+    }
+  }
+  &__bottom h2 {
+    text-align: center;
+  }
+}
+
+.reseaux-et-contact--reseaux__logos {
+  display: flex;
+  justify-content: space-between;
+  //   border: solid 2px blue;
+  a {
+    width: 100%;
+    display: flex;
+
+    // border: solid 2px red;
+  }
+}
+
+.reseaux-et-contact--reseaux__logo {
+  margin: auto;
+  width: 40%;
+}
+
+.reseaux--text,
+.paragraphe {
+  margin: 20px 0px;
+  text-align: justify;
+  text-indent: 20px;
+  &__accueil {
+    margin-top: 20px;
+    // margin-left: 10vw;
+    // margin-right: 10vw;
+  }
+}
+
+//CARDS
+.cards {
+  margin: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  &--card {
+    border: solid 2px green;
+    &__img {
+      border: solid 2px purple;
+    }
+  }
+  &__text {
+    border: solid 2px purple;
   }
 }
