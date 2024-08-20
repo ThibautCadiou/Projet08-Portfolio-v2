@@ -13,10 +13,10 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  margin: 50px 0px;
-  gap: 25px; }
+  margin: 0px 0px;
+  gap: 0px; }
   .main--section {
-    padding: 30px; }
+    padding: 15px 30px; }
 
 h1,
 h2 {
@@ -33,10 +33,13 @@ h2 {
     font-size: 24px;
     margin: auto;
     min-width: 80px;
-    list-style-type: none; }
+    list-style-type: none;
+    text-decoration: none; }
     .navigation--onglet:hover {
       color: white;
       text-decoration: underline; }
+    .navigation--onglet:visited {
+      color: white; }
 
 .header {
   display: flex;
@@ -65,6 +68,9 @@ h2 {
   .footer--text {
     margin: auto; }
 
+#reseaux {
+  margin-bottom: 20px; }
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -80,11 +86,12 @@ h2 {
   .reseaux-et-contact section {
     width: 50%; }
 
-.main--section--title__portfolio {
-  margin-bottom: 20px; }
-
-.main--section__bottom h2 {
-  text-align: center; }
+.main {
+  margin: 20px 0px; }
+  .main--section--title__portfolio {
+    margin-bottom: 20px; }
+  .main--section__bottom h2 {
+    text-align: center; }
 
 .reseaux-et-contact--reseaux__logos {
   display: flex;
@@ -99,7 +106,7 @@ h2 {
 
 .reseaux--text,
 .paragraphe {
-  margin: 20px 0px;
+  margin: 0px 20px 0px 0px;
   text-align: justify;
   text-indent: 20px; }
   .reseaux--text__accueil,

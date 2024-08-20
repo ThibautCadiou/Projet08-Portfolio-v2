@@ -14,16 +14,24 @@ function App() {
           />
         </div>
         <nav className="navigation">
-          <div className="navigation--onglet">Accueil</div>
-          <div className="navigation--onglet">Portfolio</div>
-          <div className="navigation--onglet">Réseaux </div>
-          <div className="navigation--onglet">Contact</div>
+          <a href="#accueil" className="navigation--onglet">
+            Accueil
+          </a>
+          <a href="#portfolio" className="navigation--onglet">
+            Portfolio
+          </a>
+          <a href="#reseaux" className="navigation--onglet">
+            Réseaux{" "}
+          </a>
+          <a href="#contact" className="navigation--onglet">
+            Contact
+          </a>
         </nav>
       </header>
 
       <main className="main">
         <section className="main--section">
-          <h1>Accueil</h1>
+          <h1 id="accueil">Accueil</h1>
           <p className="paragraphe paragraphe__accueil">
             Je m&apos;appelle Thibaut Cadiou, jeune développeur web passionné
             par la création de solutions numériques innovantes. J&apos;ai un
@@ -37,7 +45,9 @@ function App() {
           </p>
         </section>
         <section className="main--section">
-          <h2 className="main--section--title__portfolio">Portfolio</h2>
+          <h2 id="portfolio" className="main--section--title__portfolio">
+            Portfolio
+          </h2>
           <div className="cards">
             <a href="#" className="cards--card">
               <img src="" alt="" className="cards--card__img" />
@@ -51,7 +61,7 @@ function App() {
         </section>
         <div className="reseaux-et-contact">
           <section className="main--section reseaux-et-contact--reseaux main--section__bottom">
-            <h2>Réseaux </h2>
+            <h2 id="reseaux">Réseaux </h2>
             <p className="reseaux--text">
               Vous pouvez voir mon parcours de formations ainsi que mes
               expériences professionnelles en cliquant sur le logo Linkedin
@@ -80,7 +90,7 @@ function App() {
             </div>
           </section>
           <section className="main--section contact reseaux-et-contact--contact main--section__bottom ">
-            <h2>Contact</h2>
+            <h2 id="contact">Contact</h2>
 
             <p>
               Vous pouvez me contacter par mail ou par téléphone aux coordonnées
