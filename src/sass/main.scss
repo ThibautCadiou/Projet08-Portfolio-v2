@@ -1,6 +1,6 @@
 // Paramètres généraux
 $color-primary: #55c57a;
-$color-primary-light: #7ed56f;
+$color-primary-light: #d3d3d3;
 $color-primary-dark: #28b485;
 
 * {
@@ -168,16 +168,48 @@ h2 {
 //CARDS
 .cards {
   margin: 0px 20px 0px 20px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  &--card {
-    border: solid 2px green;
-    &__img {
-      border: solid 2px purple;
-    }
+  //   border: solid 2px purple;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  border: $color-primary-light solid 5px;
+  background-color: $color-primary-light;
+  border-radius: 20px;
+
+  box-sizing: border-box;
+  object-fit: contain;
+
+  text-decoration: none;
+  color: black;
+  &--left-element {
+    width: 50%;
+    border-radius: 20px 0px 0px 20px;
   }
-  &__text {
-    border: solid 2px purple;
+  &--right-element {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
   }
+  &--title {
+    font-size: 24px;
+  }
+  &--description {
+    text-align: justify;
+  }
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

@@ -115,34 +115,87 @@ const projectsData = [
     name: "Booki",
     contexte:
       "Le site Booki est un projet ayant pour but de créer un prototype de site internet à présenter au client. Le site n'est qu'une maquette non-fonctionnelle mais qui sert de démonstrateur pour présenter le rendu du site. Le site à été réalisé en HTML et CSS;",
+    problematiques: ["intégrer une maquette HTML CSS"],
     tags: ["HTML", "CSS"],
-    url: "https://thibautcadiou.github.io/Projet02-Booki/",
+    urlSite: "https://thibautcadiou.github.io/Projet02-Booki/",
+    urlGithub: "https://github.com/ThibautCadiou/Projet02-Booki",
     imagesUrl: ["./public/assets/p2-booki.png"],
   },
   {
     name: "Nina Carducci",
     contexte:
       "Le but de ce projet était de débugger un site internet qui avait certains bug (problemes avec le caroussel et le tri par catégorie des images). L'objectif était également d'optimiser le site internet afin d'améliorer le référencement de la photographe Nina Carducci afin qu'elle gagne en visibilité auprès de ces clients.",
+    problematiques: ["Debugger un site internet"],
     tags: ["Google Dev Tool", "Optimisation", "SEO"],
-    url: "https://thibautcadiou.github.io/Projet04-Nina/",
+    urlSite: "https://thibautcadiou.github.io/Projet04-Nina/",
+    urlGithub: "https://github.com/ThibautCadiou/Projet03-Sophie-Front",
     imagesUrl: ["./public/assets/p4-nina.png"],
   },
 ];
 
 function Portfolio() {
   return (
-    <div className="cards">
+    <div className="portfolio">
       <h2 id="portfolio" className="main--section--title__portfolio">
         Portfolio
       </h2>
-      {projectsData.map((project) => (
-        <Card projectObj={project} key={project.name} />
-      ))}
+      <div className="cards">
+        {projectsData.map((project) => (
+          <Card projectObj={project} key={project.name} />
+        ))}
+      </div>
     </div>
   );
 }
+
 function Card(props) {
-  return <h3>{props.projectObj.name}</h3>;
+  const hasBeenDeployed = props.projectObj.urlSite != null ? true : false;
+  const phraseCompetences = props.projectObj.tags.join(" ;") + "";
+
+  if (hasBeenDeployed) {
+    return (
+      <a href="#" className="card">
+        <img
+          src={props.projectObj.imagesUrl}
+          alt=""
+          className="card--left-element"
+        />
+        <div className="card--right-element">
+          <h3 className="card--title">{props.projectObj.name}</h3>
+          <p className="card--description">
+            <span>Description : </span>
+            {props.projectObj.contexte}
+          </p>
+          <p className="card--problematique">
+            <span>Problematiques : </span>
+            {props.projectObj.problematiques}
+          </p>
+          <p className="card--compétences">
+            <span>Compétences développées: </span>
+            {phraseCompetences}
+          </p>
+          <a href={props.projectObj.urlGithub}>Lien vers répertoire github</a>
+          <a href={props.projectObj.urlSite}>Lien vers site déployé</a>
+        </div>
+      </a>
+    );
+  } else {
+    return (
+      <a href="#" className="card">
+        <img
+          src={props.projectObj.imagesUrl}
+          alt=""
+          className="card--left-element"
+        />
+        <div className="card--right-element">
+          <h3 className="card--title">{props.projectObj.name}</h3>
+          <p className="card--description">{props.projectObj.contexte}</p>
+          <a href={props.projectObj.urlGithub}>Lien vers répertoire github</a>
+          <a href={props.projectObj.urlSite}>Lien vers site déployé</a>
+        </div>
+      </a>
+    );
+  }
 }
 
 function App() {

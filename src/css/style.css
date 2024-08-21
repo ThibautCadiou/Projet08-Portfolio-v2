@@ -115,12 +115,38 @@ h2 {
 
 .cards {
   margin: 0px 20px 0px 20px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px; }
-  .cards--card {
-    border: solid 2px green; }
-    .cards--card__img {
-      border: solid 2px purple; }
-  .cards__text {
-    border: solid 2px purple; }
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  box-sizing: border-box; }
+
+.card {
+  width: 100%;
+  display: flex;
+  border: #d3d3d3 solid 5px;
+  background-color: #d3d3d3;
+  border-radius: 20px;
+  box-sizing: border-box;
+  object-fit: contain;
+  text-decoration: none;
+  color: black; }
+  .card--left-element {
+    width: 50%;
+    border-radius: 20px 0px 0px 20px; }
+  .card--right-element {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px; }
+  .card--title {
+    font-size: 24px; }
+  .card--description {
+    text-align: justify; }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
