@@ -6,8 +6,18 @@ export default function Card({ projectObj }) {
 
   if (hasBeenDeployed) {
     return (
-      <div href="#" className="card">
-        <img src={projectObj.imagesUrl} alt="" className="card--left-element" />
+      <div className="card">
+        <a
+          className="card--left-element"
+          href={projectObj.imagesUrl}
+          target="_blank"
+        >
+          <img
+            src={projectObj.imagesUrl}
+            alt="image du projet"
+            className="image-projet"
+          />
+        </a>
         <div className="card--right-element">
           <h3 className="card--title">{projectObj.name}</h3>
           <p className="card--description">
@@ -33,12 +43,18 @@ export default function Card({ projectObj }) {
     );
   } else {
     return (
-      <div href="#" className="card">
-        <img
-          src={projectObj.imagesUrl}
-          alt="image du projet"
+      <div className="card">
+        <a
           className="card--left-element"
-        />
+          href={projectObj.imagesUrl}
+          target="_blank"
+        >
+          <img
+            src={projectObj.imagesUrl}
+            alt="image du projet"
+            className="image-projet"
+          />
+        </a>
         <div className="card--right-element">
           <h3 className="card--title">{projectObj.name}</h3>
           <p className="card--description">

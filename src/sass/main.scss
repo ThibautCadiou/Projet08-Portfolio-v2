@@ -1,7 +1,9 @@
 // Paramètres généraux
-$color-primary: #55c57a;
+$color-primary: black;
 $color-primary-light: #d3d3d3;
 $color-primary-dark: #28b485;
+$background-color: #011627;
+$card-background-color: #fdfffc;
 
 * {
   margin: 0;
@@ -34,7 +36,7 @@ h1,
 h2 {
   text-align: center;
   font-family: "Playfair Display", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   color: rgba($color: $color-primary, $alpha: 1);
 }
 
@@ -193,6 +195,7 @@ span {
   text-decoration: none;
   color: black;
   &--left-element {
+    display: flex;
     width: 50%;
     height: auto;
     object-fit: cover;
@@ -219,4 +222,9 @@ span {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.image-projet {
+  width: 100%;
+  margin: auto;
 }
