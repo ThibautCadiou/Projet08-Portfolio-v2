@@ -150,7 +150,7 @@ function Portfolio() {
 
 function Card(props) {
   const hasBeenDeployed = props.projectObj.urlSite != null ? true : false;
-  const phraseCompetences = props.projectObj.tags.join(" ;") + "";
+  const phraseCompetences = props.projectObj.tags.join("; ") + ";";
 
   if (hasBeenDeployed) {
     return (
