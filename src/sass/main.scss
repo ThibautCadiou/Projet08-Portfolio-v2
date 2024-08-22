@@ -167,7 +167,6 @@ h2 {
 
 //CARDS
 .cards {
-  margin: 0px 20px 0px 20px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -176,8 +175,13 @@ h2 {
   box-sizing: border-box;
 }
 
+span {
+  font-weight: bold;
+}
+
 .card {
   width: 100%;
+  height: auto;
   display: flex;
   border: $color-primary-light solid 5px;
   background-color: $color-primary-light;
@@ -190,6 +194,9 @@ h2 {
   color: black;
   &--left-element {
     width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: top left;
     border-radius: 20px 0px 0px 20px;
   }
   &--right-element {

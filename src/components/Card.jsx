@@ -15,27 +15,47 @@ export default function Card({ projectObj }) {
             {projectObj.contexte}
           </p>
           <p className="card--problematique">
-            <span>Problematiques : </span>
+            <span>Problématiques : </span>
             {projectObj.problematiques}
           </p>
           <p className="card--compétences">
             <span>Compétences développées: </span>
             {phraseCompetences}
           </p>
-          <a href={projectObj.urlGithub}>Lien vers répertoire github</a>
-          <a href={projectObj.urlSite}>Lien vers site déployé</a>
+          <a href={projectObj.urlGithub} target="_blank">
+            Lien vers répertoire github
+          </a>
+          <a href={projectObj.urlSite} target="_blank">
+            Lien vers site déployé
+          </a>
         </div>
       </div>
     );
   } else {
     return (
       <div href="#" className="card">
-        <img src={projectObj.imagesUrl} alt="" className="card--left-element" />
+        <img
+          src={projectObj.imagesUrl}
+          alt="image du projet"
+          className="card--left-element"
+        />
         <div className="card--right-element">
           <h3 className="card--title">{projectObj.name}</h3>
-          <p className="card--description">{projectObj.contexte}</p>
-          <a href={projectObj.urlGithub}>Lien vers répertoire github</a>
-          <a href={projectObj.urlSite}>Lien vers site déployé</a>
+          <p className="card--description">
+            <span>Description : </span>
+            {projectObj.contexte}
+          </p>
+          <p className="card--problematique">
+            <span>Problématiques : </span>
+            {projectObj.problematiques}
+          </p>
+          <p className="card--compétences">
+            <span>Compétences développées: </span>
+            {phraseCompetences}
+          </p>
+          <a href={projectObj.urlGithub} target="_blank">
+            Lien vers répertoire github
+          </a>
         </div>
       </div>
     );

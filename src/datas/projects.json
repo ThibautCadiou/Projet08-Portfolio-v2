@@ -3,18 +3,48 @@
     "name": "Booki",
     "contexte": "Le site Booki est un projet ayant pour but de créer un prototype de site internet à présenter au client. Le site n'est qu'une maquette non-fonctionnelle mais qui sert de démonstrateur pour présenter le rendu du site. Le site à été réalisé en HTML et CSS;",
     "problematiques": ["intégrer une maquette HTML CSS"],
-    "tags": ["HTML", "CSS"],
+    "tags": ["HTML", "CSS", "Responsive design"],
     "urlSite": "https://thibautcadiou.github.io/Projet02-Booki/",
     "urlGithub": "https://github.com/ThibautCadiou/Projet02-Booki",
     "imagesUrl": ["./assets/p2-booki.png"]
   },
   {
+    "name": "Sophie Buel",
+    "contexte": "Le travail lié au site de la photographe Sophie Buel nécessite d'inclure la connexion sur le site. Le site doit permettre à la photographe de pouvoir ajout erdes photos à son portfolio afin d'affiche ses travaux sur le site. ",
+    "problematiques": [
+      "Récupérer des informations utilisateur, manipulation du DOM et gestion des évènements (résolus avec du code Javascript)"
+    ],
+    "tags": ["Javascript"],
+    "urlGithub": "https://github.com/ThibautCadiou/Projet03-Sophie-Front",
+    "imagesUrl": ["./assets/p3-sophie.png"]
+  },
+  {
     "name": "Nina Carducci",
     "contexte": "Le but de ce projet était de débugger un site internet qui avait certains bug (problemes avec le caroussel et le tri par catégorie des images). L'objectif était également d'optimiser le site internet afin d'améliorer le référencement de la photographe Nina Carducci afin qu'elle gagne en visibilité auprès de ces clients.",
-    "problematiques": ["Debugger un site internet"],
-    "tags": ["Google Dev Tool", "Optimisation", "SEO"],
+    "problematiques": ["Debugger un site internet (résolue avce Google Dev"],
+    "tags": ["Chrome devTools", "Optimisation des parformances", "SEO"],
     "urlSite": "https://thibautcadiou.github.io/Projet04-Nina/",
     "urlGithub": "https://github.com/ThibautCadiou/Projet03-Sophie-Front",
     "imagesUrl": ["./assets/p4-nina.png"]
+  },
+  {
+    "name": "Kasa",
+    "contexte": "Kasa est un site de réservation de logement. Le but de ce projet était de réaliser le frontend su site avec React est créant des composants. ",
+    "problematiques": [
+      "Intégrer une maquette figma avec React et Sass. Réaliser le routage (réaliser avec React Router). Mettre en oeuvre des animations CSS"
+    ],
+    "tags": ["React", "Sass", "React Router", "Vite"],
+    "urlGithub": "https://github.com/ThibautCadiou/Projet05-Kasa",
+    "imagesUrl": ["./assets/p5-kasa.png"]
+  },
+  {
+    "name": "Mon Vieux Grimoire",
+    "contexte": "Mon vieux grimoire est un site qui permet aux utilisateurs de renseigner de nouveaux livres et d'y ajouter des notations. Mon travail consistait en la réalisation du backend du site avec MongoDb afin de gérer les informations liés aux livres. ",
+    "problematiques": [
+      "Stocker des données de manière sécurisée (résolue avec MongoDB et JWT)"
+    ],
+    "tags": ["Express", "MongoDB", "JWT"],
+    "urlGithub": "https://github.com/ThibautCadiou/Projet06-Grimoire-Backend",
+    "imagesUrl": ["./assets/p6-grimoire.png"]
   }
 ]

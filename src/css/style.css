@@ -114,15 +114,18 @@ h2 {
     margin-top: 20px; }
 
 .cards {
-  margin: 0px 20px 0px 20px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   box-sizing: border-box; }
 
+span {
+  font-weight: bold; }
+
 .card {
   width: 100%;
+  height: auto;
   display: flex;
   border: #d3d3d3 solid 5px;
   background-color: #d3d3d3;
@@ -133,6 +136,9 @@ h2 {
   color: black; }
   .card--left-element {
     width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: top left;
     border-radius: 20px 0px 0px 20px; }
   .card--right-element {
     display: flex;
