@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Booki",
+    "contexte": "Le site Booki est un projet ayant pour but de créer un prototype de site internet à présenter au client. Le site n'est qu'une maquette non-fonctionnelle mais qui sert de démonstrateur pour présenter le rendu du site. Le site à été réalisé en HTML et CSS;",
+    "problematiques": ["intégrer une maquette HTML CSS"],
+    "tags": ["HTML", "CSS"],
+    "urlSite": "https://thibautcadiou.github.io/Projet02-Booki/",
+    "urlGithub": "https://github.com/ThibautCadiou/Projet02-Booki",
+    "imagesUrl": ["./assets/p2-booki.png"]
+  },
+  {
+    "name": "Nina Carducci",
+    "contexte": "Le but de ce projet était de débugger un site internet qui avait certains bug (problemes avec le caroussel et le tri par catégorie des images). L'objectif était également d'optimiser le site internet afin d'améliorer le référencement de la photographe Nina Carducci afin qu'elle gagne en visibilité auprès de ces clients.",
+    "problematiques": ["Debugger un site internet"],
+    "tags": ["Google Dev Tool", "Optimisation", "SEO"],
+    "urlSite": "https://thibautcadiou.github.io/Projet04-Nina/",
+    "urlGithub": "https://github.com/ThibautCadiou/Projet03-Sophie-Front",
+    "imagesUrl": ["./assets/p4-nina.png"]
+  }
+]
