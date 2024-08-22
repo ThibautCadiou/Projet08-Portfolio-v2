@@ -1,10 +1,11 @@
+// import photo01 from "../../public/assets/photo-lkd.jpg";
 export default function Header() {
   return (
     <header className="header">
       <div className="header--logo">
         <img
           className="header--logo__img"
-          src="./public/assets/photo-lkd.jpg"
+          src="./assets/photo-lkd.jpg"
           alt="Photo thibaut cadiou"
         />
       </div>
