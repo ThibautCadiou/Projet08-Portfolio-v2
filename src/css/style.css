@@ -1,23 +1,49 @@
+@charset "UTF-8";
+/************************
+/ Paramètres généraux
+************************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
+  display: flex;
+  margin: auto;
   font-family: "Robot", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  background-color: #fdfffc;
   color: black;
-  margin: 0px 50px; }
+  background-color: #fdfffc;
+  min-width: 300px;
+  max-width: 1440px; }
 
+#root {
+  margin: auto; }
+
+/************************
+/ Media Queries - Mixin
+************************/
+/************************
+/ Paramètres spécifiques
+************************/
 .main {
   display: flex;
   flex-direction: column;
-  margin: 0px 0px;
+  margin: 0px 50px;
   gap: 0px; }
+  @media (max-width: 700px) {
+    .main {
+      margin: 0px 10px; } }
   .main--section {
     padding: 15px 30px; }
+    @media (max-width: 700px) {
+      .main--section {
+        padding: 10px 15px; } }
+    .main--section--title__portfolio {
+      margin-bottom: 20px; }
+    .main--section__bottom h2 {
+      text-align: center; }
 
 h1,
 h2 {
@@ -26,10 +52,39 @@ h2 {
   font-size: 30px;
   color: black; }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30vh;
+  margin: auto;
+  color: white;
+  background-color: black;
+  padding: 20px; }
+  @media (max-width: 700px) {
+    .header {
+      justify-content: center;
+      height: auto; } }
+  .header--logo {
+    display: flex; }
+    @media (max-width: 700px) {
+      .header--logo {
+        display: none; } }
+    .header--logo__img {
+      margin: auto;
+      height: 100%;
+      border: solid 5px white;
+      border-radius: 1000px; }
+
 .navigation {
   display: flex;
   flex-direction: row;
   gap: 20px; }
+  @media (max-width: 700px) {
+    .navigation {
+      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
   .navigation--onglet {
     font-size: 24px;
     margin: auto;
@@ -41,23 +96,6 @@ h2 {
       text-decoration: underline; }
     .navigation--onglet:visited {
       color: white; }
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 30vh;
-  margin: auto;
-  color: white;
-  background-color: black;
-  padding: 20px; }
-  .header--logo {
-    display: flex; }
-    .header--logo__img {
-      margin: auto;
-      height: 100%;
-      border: solid 5px white;
-      border-radius: 1000px; }
 
 .footer {
   display: flex;
@@ -84,19 +122,21 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
+  @media (max-width: 700px) {
+    .reseaux-et-contact {
+      flex-direction: column; } }
   .reseaux-et-contact section {
     width: 50%; }
-
-.main {
-  margin: 20px 0px; }
-  .main--section--title__portfolio {
-    margin-bottom: 20px; }
-  .main--section__bottom h2 {
-    text-align: center; }
+    @media (max-width: 700px) {
+      .reseaux-et-contact section {
+        width: 100%; } }
 
 .reseaux-et-contact--reseaux__logos {
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 700px) {
+    .reseaux-et-contact--reseaux__logos {
+      gap: 10px; } }
   .reseaux-et-contact--reseaux__logos a {
     width: 100%;
     display: flex; }
@@ -104,12 +144,26 @@ h2 {
 .reseaux-et-contact--reseaux__logo {
   margin: auto;
   width: 40%; }
+  @media (max-width: 700px) {
+    .reseaux-et-contact--reseaux__logo {
+      gap: 20px;
+      margin: 10px 0px;
+      width: 100%; } }
+  @media (max-width: 1200px) {
+    .reseaux-et-contact--reseaux__logo {
+      gap: 40px;
+      margin: 10px 0px;
+      width: 80%; } }
 
 .reseaux--text,
 .paragraphe {
   margin: 0px 20px 0px 0px;
   text-align: justify;
   text-indent: 20px; }
+  @media (max-width: 1200px) {
+    .reseaux--text,
+    .paragraphe {
+      margin: 0; } }
   .reseaux--text__accueil,
   .paragraphe__accueil {
     margin-top: 20px; }
@@ -120,6 +174,9 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   box-sizing: border-box; }
+  @media (max-width: 1200px) {
+    .cards {
+      grid-template-columns: repeat(1, 1fr); } }
 
 span {
   font-weight: bold; }
@@ -142,6 +199,9 @@ span {
     object-fit: cover;
     object-position: top left;
     border-radius: 20px 0px 0px 20px; }
+    @media (max-width: 700px) {
+      .card--left-element {
+        display: none; } }
   .card--right-element {
     display: flex;
     flex-direction: column;
@@ -149,8 +209,14 @@ span {
     width: 50%;
     padding: 10px;
     border-radius: 0px 20px 20px 0px; }
+    @media (max-width: 700px) {
+      .card--right-element {
+        width: 100%; } }
   .card--title {
     font-size: 24px; }
+    @media (max-width: 700px) {
+      .card--title {
+        text-align: center; } }
   .card--description {
     text-align: justify; }
 
