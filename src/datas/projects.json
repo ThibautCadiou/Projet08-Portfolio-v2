@@ -1,8 +1,8 @@
 [
   {
     "name": "Booki",
-    "contexte": "Le site Booki est un projet ayant pour but de créer un prototype de site internet à présenter au client. Le site n'est qu'une maquette non-fonctionnelle mais qui sert de démonstrateur pour présenter le rendu du site. Le site à été réalisé en HTML et CSS;",
-    "problematiques": ["intégrer une maquette HTML CSS"],
+    "contexte": "Le site Booki est un projet ayant pour but de créer un prototype de site internet à présenter au client. Le site n'est qu'une maquette non-fonctionnelle mais qui sert de démonstrateur pour présenter le rendu du site. Le site à été réalisé en HTML et CSS.",
+    "problematiques": ["intégrer une maquette en HTML et CSS"],
     "tags": ["HTML", "CSS", "Responsive design"],
     "urlSite": "https://thibautcadiou.github.io/Projet02-Booki/",
     "urlGithub": "https://github.com/ThibautCadiou/Projet02-Booki",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Sophie Buel",
-    "contexte": "Le travail lié au site de la photographe Sophie Buel nécessite d'inclure la connexion sur le site. Le site doit permettre à la photographe de pouvoir ajout erdes photos à son portfolio afin d'affiche ses travaux sur le site. ",
+    "contexte": "Le travail lié au site de la photographe Sophie Buel nécessite d'inclure la connexion sur le site. Il doit permettre à la photographe de pouvoir ajouter des photos à son portfolio afin d'afficher ses travaux.",
     "problematiques": [
       "Récupérer des informations utilisateur, manipulation du DOM et gestion des évènements (résolus avec du code Javascript)"
     ],
@@ -20,7 +20,7 @@
   },
   {
     "name": "Nina Carducci",
-    "contexte": "Le but de ce projet était de débugger un site internet qui avait certains bug (problemes avec le caroussel et le tri par catégorie des images). L'objectif était également d'optimiser le site internet afin d'améliorer le référencement de la photographe Nina Carducci afin qu'elle gagne en visibilité auprès de ces clients.",
+    "contexte": "Le but de ce projet était de débugger un site internet (problèmes avec le caroussel et le tri par catégorie pour les images). L'objectif était également d'optimiser le site internet afin d'améliorer le référencement du site pour gagner en visibilité.",
     "problematiques": ["Debugger un site internet (résolue avce Google Dev"],
     "tags": ["Chrome devTools", "Optimisation des parformances", "SEO"],
     "urlSite": "https://thibautcadiou.github.io/Projet04-Nina/",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Kasa",
-    "contexte": "Kasa est un site de réservation de logement. Le but de ce projet était de réaliser le frontend su site avec React est créant des composants. ",
+    "contexte": "Kasa est un site de réservation de logements. Le but de ce projet était de réaliser le frontend su site avec React est créant des composants.",
     "problematiques": [
       "Intégrer une maquette figma avec React et Sass. Réaliser le routage (réaliser avec React Router). Mettre en oeuvre des animations CSS"
     ],

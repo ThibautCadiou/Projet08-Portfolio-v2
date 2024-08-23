@@ -4,10 +4,10 @@ export default function Reseaux() {
       <h2 id="reseaux">Réseaux </h2>
       <p className="reseaux--text">
         Vous pouvez voir mon parcours de formations ainsi que mes expériences
-        professionnelles en cliquant sur le logo Linkedin ci-dessous. Vous
-        pouvez également voir mes répertoires de travail en tant que développeur
-        sur mon compte Github en cliquant sur le logo ci-dessous. Le dernier
-        logo vous permet d&apos;accéder à mon CV depuis votre navigateur.
+        professionnelles en cliquant sur le logo Linkedin. Vous pouvez également
+        voir mes répertoires de travail en tant que développeur sur mon compte
+        Github en cliquant sur le logo associé. Le dernier logo vous permet
+        d&apos;accéder à mon CV depuis votre navigateur.
       </p>
       <div className="reseaux-et-contact--reseaux__logos">
         <a
