@@ -23,14 +23,14 @@ export default function Reseaux() {
         <a href="https://github.com/ThibautCadiou" target="_blank">
           <img
             className="reseaux-et-contact--reseaux__logo"
-            src="./logo-github.png"
+            src="./assets/logo-github.png"
             alt="Logo Github"
           />
         </a>
         <a href="./assets/cv.pdf" target="_blank">
           <img
             className="reseaux-et-contact--reseaux__logo"
-            src="./public/assets/logo-pdf.png"
+            src="./assets/logo-pdf.png"
             alt="Logo PDF pour télécharger CV"
           />
         </a>

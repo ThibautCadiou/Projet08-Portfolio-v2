@@ -163,8 +163,14 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: space-around;
+
   p {
-    margin: auto;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    display: block;
     text-align: center;
   }
 }
@@ -172,7 +178,7 @@ h2 {
 .reseaux-et-contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   //   border: solid 2px red;
 
   @include respond(phone) {
@@ -222,7 +228,7 @@ h2 {
 
 .reseaux--text,
 .paragraphe {
-  margin: 0px 20px 0px 0px;
+  margin: 0px 0px 0px 0px;
   text-align: justify;
   text-indent: 20px;
 

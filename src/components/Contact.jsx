@@ -7,8 +7,12 @@ export default function Contact() {
         Vous pouvez me contacter par mail ou par téléphone aux coordonnées
         suivantes:
       </p>
-      <a href="mailto:cadioucontact@gmail.com">cadioucontact@gmail.com</a>
-      <a href="tel:0666050983">06 66 05 09 83</a>
+      <a className="contact__mail" href="mailto:cadioucontact@gmail.com">
+        cadioucontact@gmail.com
+      </a>
+      <a className="contact__phone" href="tel:0666050983">
+        06 66 05 09 83
+      </a>
     </section>
   );
 }
