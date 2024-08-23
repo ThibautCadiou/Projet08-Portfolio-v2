@@ -16,18 +16,18 @@ export default function Reseaux() {
         >
           <img
             className="reseaux-et-contact--reseaux__logo"
-            src="./public/assets/logo-linkedin.png"
+            src="./assets/logo-linkedin.png"
             alt="Logo Linkedin"
           />
         </a>
         <a href="https://github.com/ThibautCadiou" target="_blank">
           <img
             className="reseaux-et-contact--reseaux__logo"
-            src="./public/assets/logo-github.png"
+            src="./assets/logo-github.png"
             alt="Logo Github"
           />
         </a>
-        <a href="./public/assets/cv.pdf" target="_blank">
+        <a href="./assets/cv.pdf" target="_blank">
           <img
             className="reseaux-et-contact--reseaux__logo"
             src="./public/assets/logo-pdf.png"

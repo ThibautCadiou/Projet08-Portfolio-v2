@@ -90,7 +90,8 @@ h2 {
     margin: auto;
     min-width: 80px;
     list-style-type: none;
-    text-decoration: none; }
+    text-decoration: none;
+    color: white; }
     .navigation--onglet:hover {
       color: white;
       text-decoration: underline; }
