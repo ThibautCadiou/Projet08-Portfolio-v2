@@ -34,6 +34,7 @@
       "Intégrer une maquette figma avec React et Sass. Réaliser le routage (réaliser avec React Router). Mettre en oeuvre des animations CSS"
     ],
     "tags": ["React", "Sass", "React Router", "Vite"],
+    "urlSite": "https://projet05-kasa.vercel.app/",
     "urlGithub": "https://github.com/ThibautCadiou/Projet05-Kasa",
     "imagesUrl": ["./assets/p5-kasa.png"]
   },
