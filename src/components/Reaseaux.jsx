@@ -1,6 +1,6 @@
 export default function Reseaux() {
   return (
-    <section className="main--section reseaux-et-contact--reseaux main--section__bottom">
+    <section className="main--section main--section__bottom reseaux-et-contact--reseaux ">
       <h2 id="reseaux">Réseaux </h2>
       <p className="paragraphe">
         Vous pouvez voir mon parcours de formations ainsi que mes expériences
@@ -11,6 +11,7 @@ export default function Reseaux() {
       </p>
       <div className="reseaux-et-contact--reseaux__logos">
         <a
+          className="reseaux-et-contact--reseaux__logo"
           href="https://www.linkedin.com/in/thibaut-cadiou-4a8052309"
           target="_blank"
         >
