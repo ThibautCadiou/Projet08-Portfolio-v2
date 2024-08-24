@@ -2,13 +2,13 @@
 export default function Header() {
   return (
     <header className="header">
-      <div className="header--logo">
-        <img
-          className="header--logo__img"
-          src="./assets/photo-lkd.jpg"
-          alt="Photo thibaut cadiou"
-        />
-      </div>
+      {/* <div className="header--logo"> */}
+      <img
+        className="header--img"
+        src="./assets/photo-lkd.jpg"
+        alt="Photo thibaut cadiou"
+      />
+      {/* </div> */}
       <nav className="navigation">
         <a href="#accueil" className="navigation--onglet">
           Accueil

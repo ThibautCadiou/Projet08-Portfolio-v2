@@ -1,4 +1,20 @@
 /************************
+/ Media Queries - Mixin
+************************/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 700px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+/************************
 / Paramètres généraux
 ************************/
 $color-primary: black;
@@ -29,54 +45,8 @@ body {
   margin: auto;
 }
 
-/************************
-/ Media Queries - Mixin
-************************/
-@mixin respond($breakpoint) {
-  @if $breakpoint == tiny-phone {
-    @media (min-width: 700px) {
-      @content;
-    }
-  }
-  @if $breakpoint == phone {
-    @media (max-width: 700px) {
-      @content;
-    }
-  }
-  @if $breakpoint == tab {
-    @media (max-width: 1200px) {
-      @content;
-    }
-  }
-}
-
-/************************
-/ Paramètres spécifiques
-************************/
-.main {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 50px;
-  @include respond(phone) {
-    margin: 0px 10px;
-  }
-  gap: 0px;
-
-  &--section {
-    padding: 15px 30px;
-    @include respond(phone) {
-      padding: 10px 15px;
-    }
-
-    &--title {
-      &__portfolio {
-        margin-bottom: 20px;
-      }
-    }
-    &__bottom h2 {
-      text-align: center;
-    }
-  }
+span {
+  font-weight: bold;
 }
 
 h1,
@@ -87,6 +57,45 @@ h2 {
   color: rgba($color: $color-primary, $alpha: 1);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+  gap: 0px;
+  @include respond(phone) {
+    margin: 0px 10px;
+  }
+
+  &--section {
+    padding: 15px 30px;
+    @include respond(phone) {
+      padding: 10px 15px;
+    }
+
+    &__bottom h2 {
+      text-align: center;
+    }
+  }
+}
+
+.paragraphe {
+  margin: 0px;
+  text-align: justify;
+  text-indent: 20px;
+
+  @include respond(tab) {
+    margin: 0;
+  }
+  &__accueil {
+    margin-top: 20px;
+  }
+}
+
+/************************
+/ Paramètres spécifiques
+************************/
+
+/*    Header    */
 .header {
   display: flex;
   flex-direction: row;
@@ -100,17 +109,12 @@ h2 {
     justify-content: center;
     height: auto;
   }
-
-  &--logo {
-    display: flex;
+  &--img {
+    height: 100%;
+    border: solid 5px white;
+    border-radius: 1000px;
     @include respond(phone) {
       display: none;
-    }
-    &__img {
-      margin: auto;
-      height: 100%;
-      border: solid 5px white;
-      border-radius: 1000px;
     }
   }
 }
@@ -118,7 +122,6 @@ h2 {
 .navigation {
   display: flex;
   flex-direction: row;
-  //   border: solid 2px red;
   gap: 20px;
   @include respond(phone) {
     flex-direction: column;
@@ -142,19 +145,73 @@ h2 {
   }
 }
 
-.footer {
-  display: flex;
-  height: 30vh;
-  margin: auto;
-  color: white;
-  background-color: black;
-  padding: 20px;
-
+/*    Accueil    */
+.accueil {
   &--text {
-    margin: auto;
+    margin-top: 20px;
   }
 }
 
+/*    Portfolio    */
+.portfolio {
+  &--title {
+    margin-bottom: 20px;
+  }
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  @include respond(tab) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: auto;
+  color: black;
+  text-decoration: none;
+  background-color: $card-background-color;
+  border: $card-background-color solid 5px;
+  border-radius: 20px;
+
+  &--left-element {
+    display: flex;
+    width: 50%;
+    object-fit: cover;
+    object-position: top left;
+    border-radius: 20px 0px 0px 20px;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &--right-element {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+  &--title {
+    font-size: 24px;
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+  &--description {
+    text-align: justify;
+  }
+}
+
+/*    Réseaux et contact    */
 #reseaux {
   margin-bottom: 20px;
 }
@@ -226,93 +283,20 @@ h2 {
   }
 }
 
-.reseaux--text,
-.paragraphe {
-  margin: 0px 0px 0px 0px;
-  text-align: justify;
-  text-indent: 20px;
-
-  @include respond(tab) {
-    margin: 0;
-  }
-  &__accueil {
-    margin-top: 20px;
-    // margin-left: 10vw;
-    // margin-right: 10vw;
-  }
-}
-
-//CARDS
-.cards {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  @include respond(tab) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  gap: 20px;
-  //   border: solid 2px purple;
-  box-sizing: border-box;
-}
-
-span {
-  font-weight: bold;
-}
-
-.card {
-  width: 100%;
-  height: auto;
-  display: flex;
-  border: $card-background-color solid 5px;
-  background-color: $card-background-color;
-  border-radius: 20px;
-
-  box-sizing: border-box;
-  object-fit: contain;
-
-  text-decoration: none;
-  color: black;
-  &--left-element {
-    display: flex;
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    object-position: top left;
-    border-radius: 20px 0px 0px 20px;
-    @include respond(phone) {
-      display: none;
-    }
-  }
-  &--right-element {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 50%;
-    padding: 10px;
-    border-radius: 0px 20px 20px 0px;
-    @include respond(phone) {
-      width: 100%;
-    }
-  }
-  &--title {
-    font-size: 24px;
-    @include respond(phone) {
-      text-align: center;
-    }
-  }
-  &--description {
-    text-align: justify;
-  }
-}
-
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 .image-projet {
   width: 100%;
   margin: auto;
+}
+
+/*    Footer    */
+.footer {
+  display: flex;
+  height: 20vh;
+  margin: auto;
+  color: white;
+  background-color: black;
+  padding: 20px;
+  &--text {
+    margin: auto;
+  }
 }

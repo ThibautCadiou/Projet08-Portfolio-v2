@@ -2,7 +2,7 @@ export default function Reseaux() {
   return (
     <section className="main--section reseaux-et-contact--reseaux main--section__bottom">
       <h2 id="reseaux">Réseaux </h2>
-      <p className="reseaux--text">
+      <p className="paragraphe">
         Vous pouvez voir mon parcours de formations ainsi que mes expériences
         professionnelles en cliquant sur le logo Linkedin. Vous pouvez également
         voir mes répertoires de travail en tant que développeur sur mon compte

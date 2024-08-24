@@ -1,8 +1,10 @@
 export default function Accueil() {
   return (
-    <section className="main--section">
-      <h1 id="accueil">Accueil</h1>
-      <p className="paragraphe paragraphe__accueil">
+    <section className="main--section accueil">
+      <h1 id="accueil" className="accueil--title">
+        Accueil
+      </h1>
+      <p className="paragraphe accueil--text">
         Je m&apos;appelle Thibaut Cadiou, je suis un jeune développeur web
         passionné par la création de solutions numériques innovantes. Je viens
         de finir le <span>parcours développeur Web </span> de l&apos;organisme
