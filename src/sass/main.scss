@@ -20,8 +20,10 @@
 $color-primary: black;
 $color-primary-light: #d3d3d3;
 $color-primary-dark: #28b485;
-$background-color: #fdfffc;
-$card-background-color: #d1f5ff;
+$background-color: #ffffff;
+$card-background-color: #f4f4f5;
+$cards_blur01: 0.2;
+$cards_blur02: 0.6;
 
 * {
   margin: 0;
@@ -91,6 +93,10 @@ h2 {
   }
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 .hidden {
   display: none;
 }
@@ -106,19 +112,23 @@ h2 {
   height: 30vh;
   margin: auto;
   color: white;
-  background-color: black;
+  // background-color: black;
+  background-image: url("/assets/banner03.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
   padding: 20px;
   @include respond(phone) {
     justify-content: center;
-    height: auto;
+    // height: auto;
   }
   &--img {
     height: 100%;
     border: solid 5px white;
     border-radius: 1000px;
-    @include respond(phone) {
-      display: none;
-    }
+    // @include respond(phone) {
+    //   display: none;
+    // }
   }
 }
 
@@ -127,9 +137,10 @@ h2 {
   flex-direction: row;
   gap: 20px;
   @include respond(phone) {
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: none;
+    // flex-direction: column;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
   }
   &--onglet {
     font-size: 24px;
@@ -180,6 +191,8 @@ h2 {
   background-color: $card-background-color;
   border: $card-background-color solid 5px;
   border-radius: 20px;
+  box-shadow: 0 5px 10px rgba($color: #000000, $alpha: $cards_blur02);
+  transition: all 0.2s;
 
   &--left-element {
     display: flex;
@@ -209,6 +222,22 @@ h2 {
   }
   &--description {
     text-align: justify;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba($color: #000000, $alpha: $cards_blur01);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: $cards_blur02);
+  }
+
+  &__link,
+  &__link:visited {
+    text-decoration: none;
+    color: blue;
   }
 }
 

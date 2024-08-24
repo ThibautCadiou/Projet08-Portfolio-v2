@@ -32,10 +32,10 @@ export default function Card({ projectObj }) {
             <span>Compétences développées: </span>
             {phraseCompetences}
           </p>
-          <a href={projectObj.urlGithub} target="_blank">
+          <a href={projectObj.urlGithub} target="_blank" className="card__link">
             Lien vers répertoire github
           </a>
-          <a href={projectObj.urlSite} target="_blank">
+          <a href={projectObj.urlSite} target="_blank" className="card__link">
             Lien vers site déployé
           </a>
         </div>
@@ -69,7 +69,7 @@ export default function Card({ projectObj }) {
             <span>Compétences développées: </span>
             {phraseCompetences}
           </p>
-          <a href={projectObj.urlGithub} target="_blank">
+          <a href={projectObj.urlGithub} target="_blank" className="card__link">
             Lien vers répertoire github
           </a>
         </div>
