@@ -7,7 +7,7 @@ export default function Portfolio() {
       <h2 id="portfolio" className="portfolio--title">
         Portfolio
       </h2>
-      <div className="cards ">
+      <div className="cards">
         {projectsData.map((project) => (
           <Card projectObj={project} key={project.name} />
         ))}

@@ -3,6 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ce site est mon Portfolio de développeur web. En tant que développeur web ou développeur fullstack, ca va me permettre de montrer mes compétences en javascript, html, css et mongoDB"
+    />
+    <meta property="og:title" content="Portfolio Thibaut CADIOU" />
+    <meta
+      property="og:description"
+      content="Ce site est mon Portfolio de développeur web. En tant que développeur web ou développeur fullstack, ca va me permettre de montrer mes compétences en javascript, html, css et mongoDB"
+    />
+    <!-- <meta property="og:image" content="./" /> -->
+    <meta
+      property="og:url"
+      content="https://projet08-portfolio-v2-xxdg.vercel.app/"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +31,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/style.css" />
-
-    <title>Thibaut Cadiou Portfolio</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Thibaut CADIOU",
+        "jobTitle": "Développeur Web",
+        "url": "https://projet08-portfolio-v2-xxdg.vercel.app/",
+        <!-- "image": "https://www.votresite.com/photo-profil.jpg",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Nom de l'entreprise ou Freelance"
+        }, -->
+        "sameAs": [
+          "https://www.linkedin.com/in/thibaut-cadiou-4a8052309/",
+          "https://github.com/ThibautCadiou"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Saint-Lô",
+          "addressRegion": "Normandie",
+          "postalCode": "50000",
+          "addressCountry": "France"
+        },
+        "email": "mailto:cadioucontact@gmail.com",
+        "telephone": "+33-6-66-05-09-83",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "ENSIBS",
+          "sameAs": "https://www-ensibs.univ-ubs.fr/fr/index.html"
+        },
+        "knowsAbout": [
+          "Développement Web",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "SEO",
+          "React",
+          "Node.js"
+        ],
+        "skills": [
+          "Développement Front-end",
+          "Développement Back-end",
+          "SEO",
+          "Développement Fullstack",
+          "Responsive Design"
+        ]
+      }
+    </script>
+    <title>Portfolio Thibaut Cadiou</title>
   </head>
 
   <body>
